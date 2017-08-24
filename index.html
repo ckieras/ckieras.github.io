@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <style>
+  *{
+    background-color:#DACECD;
+  }
+  
+  *{
+    text-align: center;
+  }
+  .links{
+    border-top: 110px solid #DACECD;
+    padding-right:10px;
+    padding-left:10px;
+    float:center;
+  }
+  .heading{
+    height:215px;
+    background:url(http://i66.tinypic.com/1zp350o.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+    text-align: center;
+    font-weight: bold;
+    font-family:"Playfair Display" sans-serif;
+    font-size:48px;
+    text-transform: uppercase;
+
+  }
+  h1{
+    color:white;
+    text-align: center;
+    font-weight: bold;
+    font-family:"Playfair Display" sans-serif;
+    font-size:36px;
+    text-transform: uppercase;
+    background: rgba(0,0,0,0.25);
+    font-size:70px;
+    padding:10px;
+    left: 325px;
+    top:125px;
+    position:absolute;
+    float:center;
+  }
+
+  .tabcontent{
+    padding-left: 200px;
+    padding-right:300px;
+    text-align:left;
+    padding-bottom:none;
+    background-color:#DACECD;
+    font-size:18px;
+  }
+  /*Buttons for the menu*/
+  /* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 2px solid gray;
+    background-color:#DCC8C7 ;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #E1C5B4;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #BDA19D;
+}
+
+
+
+/* Style the close button */
+.topright {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.topright:hover {color: red;}
+  </style>
+  <title>Corinne Codes</title></head>
+  <body>
+
+  <div class="tab">
+  <button class = "tablinks" onclick = "openCity(event, 'Home')" id = "defaultOpen">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'Endangered Species Project')">Endangered Species Project</button>
+  <button class="tablinks" onclick="openCity(event, 'Income Inequality Project')">Income Inequality Project</button>
+  <button class="tablinks" onclick="openCity(event, 'Bluetooth Motorized Skateboard Project')">Bluetooth Motorized Skateboard Project</button>
+</div>
+
+  <div class="heading">
+    <h1>Corinne Codes</h1>
+  </div>
+
+<div id = "Home" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+  <div class="project1">
+      <div class="container">
+        Hello! I am Corinne Kieras, a sophomore and Computer Science and Psychology double major at St. Olaf College. I am curious, ambitious, and affable. I am currently working on my Bluetooth Motorized Skateboard project and seeking opportunities to explore what I want to do with my degree.<br>Below are more places to check me out!</br>
+        </div>
+      </div>
+    </div>
+
+
+<div id="Endangered Species Project" class="tabcontent" style="display:none;">
+  <span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+  <div class="project1">
+      <div class="container">
+        <a href = "https://github.com/ckieras/Endangered-Species-Project" style = "color:#8F4140"><h2>Endangered Species Project</h2></a>
+        The goal of this project was to scrape data from the Endangered and Threatened Species list, organize it, caluclate the total number of endangered and threatened species, and put it into a searchable format. For this project I worked with three others. I wrote code in Python to scrape the data from the website and put it into a workable format. I also wrote a function to calculate the total number of endangered and threatened species on the webpage. Then, I made the webpage searchable by FR number. I then used this same process to organize the data on a different webpage that housed the list of endangered species in Minnesota. 
+      </div>
+    </div>
+</div>
+
+<div id="Income Inequality Project" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+  <a href = "https://github.com/ckieras/Income-Inequality-Project"style = "color:#8F4140"><h2>Income Inequality Project</h2></a>
+  <div class="project2">
+      <div class="container">
+        <div class="col">
+          The goal of this project was to use R to explore the disparities across income, and explore if these disparities were correlated to gender. I worked in a group of four and used data from W2 tax forms. I compared the household income earnings with the gender of the child in the house and found a correlation. I also explored the income disparites between college educated females and males. I found, on average, college educated males made more, and, in some instances, the non-college educated males made more than their college educated female counterparts. I then made maps of different states to explore the difference between males positive W2 earnings and females across state counties. Interestingly, there was a slight correlation, as females reported having not as much of a positive correlation as males did.
+        </div>
+      </div>
+    </div>
+</div>
+
+<div id="Bluetooth Motorized Skateboard Project" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+  <h2>Bluetooth Controlled Motorized Skateboard</h2>
+    <div>
+        Progess: I have ordered the deck and the special 83mm wheels to attach the motors to.<br> I found these wheels off Amazon for pretty cheap.(<a href = "https://www.amazon.com/gp/product/B01B08HCGK/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1" style = "color:#8F4140">Longboard 180mm Trucks Combo w/ 83mm Flywheels + Owlsome ABEC 7 Bearings</a>)</br> <img src = "https://preview.ibb.co/k8PHU5/81x_Bhj_Zcm0_L_SL1500.jpg" style = "width:300px; height:250px"><br>The wheels need to be 83mm in order to secure the motor and gears to the wheels without the hardware being to close to the ground and running the risk of being destroyed. So unless you can buy a skateboard with 83mm wheels premade it is cheaper to buy a seperate deck and attatch the wheels afterward. I also purchased a deck, and in the process, learned some interesting facts about selecting the right size deck for your intended use and body size. I chose a full size 8.5" deck, as I am taller than 5'3", I am quite new to skateboarding, and I am intending to use the board to get to classes. Warehouse Skateboards has a great <a href = "https://www.warehouseskateboards.com/help/Skateboard-Decks-Buying-Guide" style = "color:#8F4140"> guide </a>to purchasing the deck that is right for you. I got my deck for $18 on <a href = "http://www.skateshred.com/index.php/" style = "color:#8F4140">SkateShred</a>. <img src="https://image.ibb.co/ecti2Q/8_25natboth_1.png" style = "width: 300px; height:250px;"></br><br stlye="font-size:14px;"> This project is in progress, check back soon for more updates! </br>
+        
+    </div>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+  <div class = "links" id= "links">
+  <a href = "https://www.linkedin.com/in/corinne-kieras-a75917145"> <img src = "http://i68.tinypic.com/148oi2f.jpg" style = "width: 60px;height: 60px"></a><a href = "https://github.com/ckieras/ckieras.github.io/blob/master/Final%20Resume.pdf"> <img src = "https://image.ibb.co/fnUCBk/google_docs_512_1.png" style = "width: 60px;height: 60px"></a>
+  <a target = "_top" href="mailto:kieras1@stolaf.edu"><img src = "https://preview.ibb.co/hPWZrk/gmail1600.png" style = "width: 70px;height: 70px"></a>
+  <a href = "https://github.com/ckieras"><img src="https://preview.ibb.co/bVe4rk/Ei_sc_github_svg.png" style = "width: 80px;height: 80px"</a>
+  </div>
+
+  </body>
+</html>
